@@ -3,7 +3,7 @@ const app = express()
 const path = require('path')
 
 app.get('/', function (req, res) {
-    res.sendFile(path.join(__dirname,'Inicio.hmtl'))
+    res.sendFile(path.join(__dirname,'Inicio.html'))
 })
 
 
