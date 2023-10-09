@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="icon" href="img/icono-garaje.png" type="image/png">
+</head>
+<body class="fondo-azul">
+        
+    <div class="contenedor">
+        
+        <div class="logo">
+            <img src="img/logo.jpg" alt="">
+        </div>
+        <div class="contenedor-derecha">
+            <header>
+        
+                <nav>
+                    <ul>
+                         <li><a href="Inicio.html">Inicio</a></li>
+                        <li><a href="nuestro-equipo.html">Nuestro Equipo</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="contacto.html">Formulario de Contacto</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        
+        
+    </div>
+    <p></p>
+    <a href="#">
+        <div>
+            <section id="contact-form">
+                <h2>Contacta con Nosotros</h2>
+                <form>
+
+                    <label for="servicio">Servicio:</label>
+                    <select id="servicio" name="servicio" required>
+                        <option value="Chapa y Pintura">Chapa y Pintura</option>
+                        <option value="Cambio de Neumáticos">Cambio de Neumáticos</option>
+                        <option value="Mantenimiento Básico">Mantenimiento Básico</option>
+                        <option value="Mecánica Básica">Mecánica Básica</option>
+                        <option value="Revisión Pre ITV">Revisión Pre ITV</option>
+                    </select><br>
+
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required><br>
+    
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required><br>
+    
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" required><br>
+    
+                    <label for="telefono">Número de Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required><br>
+    
+                    <label for="codigo-postal">Código Postal:</label>
+                    <input type="text" id="codigo-postal" name="codigo-postal" required><br>
+    
+                    <label for="dato-interes">Dato de Interés:</label>
+                    <textarea id="dato-interes" name="dato-interes" rows="4" required></textarea><br>
+    
+                    
+                    <button class="button-51" role="button">Enviar</button>
+    
+                </form>
+            </section>
+        </div>
+    </a>
+    
+</body>
+</html>

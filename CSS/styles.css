@@ -1,0 +1,271 @@
+body {
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor-derecha {
+  flex: 20; /* El menú de navegación tomará todo el espacio disponible */
+  text-align: center;
+}
+
+header {
+  background-color: #0073e6;
+  color: #C7EAFA;
+  padding: 10px;
+  width: 100%;
+}
+
+/* Estilo para el contenedor de la imagen del logo */
+.logo {
+  padding: 10px;
+  text-align: left; /* Alinea el logo a la izquierda */
+}
+
+/* Estilo para la imagen dentro del contenedor */
+.logo img {
+  width: 120px; /* Ancho deseado */
+  height: 100px; /* Alto deseado */
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+
+#banner {
+  text-align: center;
+  padding: 20px 0;
+}
+
+#banner img {
+  max-width: 100%;
+  height: auto;
+}
+
+.c1 {
+  display: flex;
+  justify-content: center;
+}
+
+.c2 {
+  width: 50%;
+  padding: 20px;
+  text-align: center;
+}
+
+.contenedor {
+  display: flex;
+  align-items: center; /* Centrar verticalmente */
+  background-color: #0073e6;
+  padding: 10px;
+}
+
+
+.fondo-azul {
+  background-image: url("/img/fondo-taller.jpg");
+  background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+.fondo-blanco {
+  background-color: #ffffff;
+}
+
+.photo-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+  gap: 10px; /* Espacio entre las fotos */
+}
+
+.photo {
+  overflow: hidden;
+}
+
+.photo img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.2s;
+}
+
+.photo:hover img {
+  transform: scale(1.1); /* Zoom al pasar el cursor sobre la foto */
+}
+
+
+
+.c3 {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.button-51 {
+  background-color: transparent;
+  border: 1px solid #266DB6;
+  box-sizing: border-box;
+  color: #00132C;
+  font-family: "Avenir Next LT W01 Bold",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 31px 23px;
+  position: relative;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-bottom: 20px; 
+
+}
+
+.button-51:hover,
+.button-51:active {
+  outline: 0;
+}
+
+.button-51:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button-51:before {
+  background-color: #D5EDF6;
+  content: "";
+  height: calc(100% + 3px);
+  position: absolute;
+  right: -7px;
+  top: -9px;
+  transition: background-color 300ms ease-in;
+  width: 100%;
+  z-index: -1;
+}
+
+.button-51:hover:before {
+  background-color: #6DCFF6;
+}
+
+@media (min-width: 768px) {
+  .button-51 {
+    padding: 20px 40px;
+  }
+}
+
+/* Estilos para los enlaces (quitar subrayado) */
+a {
+  text-decoration: none;
+  color: #0073e6; /* Cambia el color del enlace si lo deseas */
+}
+
+/* Nuestro Equipo  */
+
+/* Estilos para la sección Nuestro Equipo */
+#nuestro-equipo {
+  text-align: center;
+  padding: 20px;
+}
+
+#nuestro-equipo h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Estilos para los miembros del equipo */
+.team-members {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Centra verticalmente */
+  flex-wrap: wrap;
+  gap: 20px; /* Espacio entre los miembros */
+}
+
+.team-member {
+  flex: 1;
+  text-align: center;
+}
+
+.team-member img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilos para los botones de Pedir Cita */
+.book-button {
+  background-color: #0073e6;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.book-button:hover {
+  background-color: #005aa6;
+}
+
+/* Estilo para el formulario */
+#contact-form {
+  background-color: #f7f7f7; /* Fondo gris claro */
+  border: 1px solid #ddd; /* Borde gris */
+  padding:1px 50px;
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  text-align: center;
+  max-width: 400px; /* Ancho máximo del formulario */
+  margin: 0 auto; /* Centrar horizontalmente */
+}
+
+/* Estilo para los campos del formulario */
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Espacio entre las "tarjetas" */
+    padding: 20px; /* Espacio alrededor de las "tarjetas" */
+    border: 1px solid #ddd; /* Borde alrededor del contenedor */
+    border-radius: 5px; /* Bordes redondeados del contenedor */
+}
+
+.tarjetas p {
+    flex: 1;
+    background-color: white; /* Color de fondo de cada "tarjeta" */
+    padding: 20px; /* Espacio interno de cada "tarjeta" */
+    border: 1px solid #ccc; /* Borde alrededor de cada "tarjeta" */
+    border-radius: 5px; /* Bordes redondeados de cada "tarjeta" */
+}
