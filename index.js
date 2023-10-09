@@ -1,8 +1,9 @@
 const express = require('express')
 const app = express()
+const path = require('path')
 
 app.get('/', function (req, res) {
-    res.sendFile(__dirname, 'Inicio.html')
+    res.sendFile(path.join(__dirname,'Index.hmtl'))
 })
 
 
